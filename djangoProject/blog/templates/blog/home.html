@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Reddit+Mono:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/styles.css' %}"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureEcho</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">FutureEcho</div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Letters</a>
+          <a href="#">Explore</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="register">
+          <a href="#">Register</a>
+        </div>
+      </nav>
+      <div class="container">
+        <form class="form-container">
+          <div class="form-group">
+            <label class="form-label">Deliver in</label>
+            <div class="button-group">
+              <button type="button" class="default">6 months</button>
+              <button type="button" class="default">1 year</button>
+              <button type="button" class="default">3 years</button>
+              <button type="button" class="default">5 years</button>
+              <button type="button" class="default">10 years</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Select your audience</label>
+            <div class="button-group">
+              <button type="button" class="default">Private</button>
+              <button type="button" class="default">
+                Public, but anonymous
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Make sure you get your letter</label>
+            <input
+              type="email"
+              placeholder="mejrakoza@gmail.com"
+              class="input-field"
+            />
+          </div>
+
+          <button type="submit" class="submit-button">
+            Send to the Future
+          </button>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>
