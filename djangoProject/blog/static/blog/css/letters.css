@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: "Inconsolata", monospace;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: rgb(99, 40, 193);
+  color: white;
+  padding: 25px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1; /* Takes up available space */
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.post-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adds space between posts */
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  margin-right: 10px;
+}
+
+.user-details strong {
+  display: block;
+}
+
+footer {
+  background-color: rgb(99, 40, 193);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}

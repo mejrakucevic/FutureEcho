@@ -18,7 +18,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FutureEcho</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -26,12 +25,17 @@
         <div class="logo">FutureEcho</div>
         <div class="menu">
           <a href="#">Home</a>
-          <a href="#">Letters</a>
-          <a href="#">Explore</a>
-          <a href="#">Contact</a>
+          <a href="letters">Letters</a>
+
+          <a href="contact">Contact</a>
         </div>
-        <div class="register">
-          <a href="#">Register</a>
+        <div class="account">
+          <div class="register">
+            <a href="#">Register</a>
+          </div>
+          <div class="register">
+            <a href="#">Log In</a>
+          </div>
         </div>
       </nav>
       <div class="container">
@@ -71,6 +75,21 @@
           </button>
         </form>
       </div>
-    </header>
+
+      <div class="form-group">
+        <textarea
+          class="letter-input"
+          placeholder="Write your letter here..."
+          rows="10"
+          style="width: 70%; resize: vertical; font-size: 16px; padding: 10px"
+        ></textarea>
+
+
+    <footer class="footer">    
+        <p>&copy; 2024 FutureEcho. All rights reserved.</p>
+    </footer>
+      </div>
+    
+   
   </body>
 </html>

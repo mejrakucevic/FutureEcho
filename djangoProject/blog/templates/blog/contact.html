@@ -1,0 +1,171 @@
+<!-- 
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Reddit+Mono:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+ 
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureEcho</title>
+  </head>
+
+<section
+  class="contact-section"
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    font-family: Inconsolata, monospace;
+     margin-top: -200px;
+     font-size: 1vh;
+  "
+>
+  <div style="width: 100%; max-width: 500px; text-align: center; ">
+    <div class="contact-intro" style="text-align: center; margin-bottom: 20px">
+      <h2 class="contact-title" style="font-size: 28px; margin: 0">
+        Get in Touch
+      </h2>
+      <p class="contact-description" style="font-size: 1.5vh; color: #555">
+        Fill out the form below and we'll get back to you as soon as possible.
+      </p>
+    </div>
+  
+
+  <form
+    class="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    style="display: flex; flex-direction: column; gap: 15px"
+  >
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input
+      type="hidden"
+      name="subject"
+      value="New Contact Form Submission from Web3Forms"
+    />
+    <input type="hidden" name="from_name" value="My Website" />
+
+    <div
+      class="form-group-container"
+      style="display: flex; flex-wrap: wrap; gap: 15px"
+    >
+      <div class="form-group" style="flex: 1; min-width: 200px">
+        <label
+          for="name"
+          class="form-label"
+          style="display: block; margin-bottom: 5px"
+          >Name</label
+        >
+        <input
+          id="name"
+          name="name"
+          class="form-input"
+          placeholder="Your name"
+          type="text"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          "
+        />
+      </div>
+      <div class="form-group" style="flex: 1; min-width: 200px">
+        <label
+          for="email"
+          class="form-label"
+          style="display: block; margin-bottom: 5px"
+          >Email</label
+        >
+        <input
+          id="email"
+          name="email"
+          class="form-input"
+          placeholder="Your email"
+          type="email"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          "
+        />
+      </div>
+      <div class="form-group" style="flex: 1; min-width: 200px">
+        <label
+          for="phone"
+          class="form-label"
+          style="display: block; margin-bottom: 5px"
+          >Phone</label
+        >
+        <input
+          id="phone"
+          name="phone"
+          class="form-input"
+          placeholder="+1 (234) 56789"
+          type="text"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          "
+        />
+      </div>
+      <div class="form-group" style="flex: 1 100%">
+        <label
+          for="message"
+          class="form-label"
+          style="display: block; margin-bottom: 5px"
+          >Message</label
+        >
+        <textarea
+          class="form-textarea"
+          id="message"
+          name="message"
+          placeholder="Your message"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+            min-height: 100px;
+          "
+        ></textarea>
+      </div>
+    </div>
+    <button
+      class="form-submit"
+      type="submit"
+      style="
+        padding: 20px 20px;
+        background-color: rgb(99, 40, 193);
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.05s;
+         onmouseover="this.style.backgroundColor='#8a2be2';" 
+        onmouseout="this.style.backgroundColor='violet';"
+      "
+    >
+      Send Message
+    </button></div>
+  </form>
+</section>
