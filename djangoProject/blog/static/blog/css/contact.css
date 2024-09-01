@@ -1,0 +1,173 @@
+/* contact.css */
+
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(233, 233, 233);
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  margin: 0; /* Ensure there's no margin around the body */
+}
+
+/* Header and Navigation */
+header {
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(99, 40, 193);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  border: 1px solid rgb(237, 237, 237);
+  background: transparent;
+  border-radius: 15px;
+}
+
+.account {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.register a {
+  text-decoration: none;
+  color: #141414;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  background: rgb(224, 224, 224);
+}
+
+.register a:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background: transparent;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Ensure full viewport height */
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.contact-description {
+  font-size: 1.5vh;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.form-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group:nth-child(4) {
+  flex: 1 100%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-submit {
+  padding: 15px;
+  background-color: rgb(99, 40, 193);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+  background-color: #8a2be2;
+}
+
+.form-submit:active {
+  background-color: violet;
+}
+
+footer {
+  background-color: rgb(99, 40, 193);
+  color: white;
+  padding: 69.5px 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

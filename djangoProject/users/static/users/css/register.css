@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Reddit+Mono:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+body {
+  display: flex;
+  justify-content: center; /* Horizontally centers the form */
+  align-items: center; /* Vertically centers the form */
+  min-height: 100vh; /* Ensures body takes up full viewport height */
+  margin: 0; /* Removes default body margin */
+  background-color: #ffffff; /* Optional: Light background for contrast */
+  flex-direction: column; /* Stack items vertically */
+  font-family: "Inconsolata", monospace;
+
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(99, 40, 193);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  border: 1px solid rgb(237, 237, 237);
+  background: transparent;
+  border-radius: 15px;
+}
+
+.account {
+  display: flex;
+  align-items: flex-end; /* Aligns items to the bottom of the container */
+  gap: 15px;
+}
+.register a {
+  text-decoration: none;
+  color: #141414;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  background: rgb(224, 224, 224);
+}
+
+.register {
+  display: inline-block;
+}
+
+.register a:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background: transparent;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Styles for the form container */
+.form-container {
+  max-width: 400px;
+  width: 100%; /* Ensures the form doesn't exceed its max width */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  border: 2px solid #eee; /* Light border for a modern look */
+  margin-left: 1000px;
+  margin-top: 200px;
+}
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%; /* Takes full width of the container */
+  padding: 10px; /* Adds padding for comfort */
+  margin: 10px 0; /* Adds margin to separate fields */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+/* Styles for the form header */
+.form-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4b0082; /* Dark violet for a modern accent */
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Styles for the submit button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #8a2be2; /* Violet border */
+  background-color: transparent;
+  color: #8a2be2; /* Violet text */
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth hover effect */
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #8a2be2; /* Violet background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Styles for the footer text */
+.footer-text {
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center; /* Centers the text */
+}
+
+.footer-note {
+  color: #6c757d; /* Subtle muted color */
+}
+
+.footer-note a {
+  color: #4b0082; /* Violet link color */
+  text-decoration: none;
+  font-weight: 500; /* Slightly bolder for emphasis */
+}
+
+.footer-note a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  color: #8a2be2;
+}

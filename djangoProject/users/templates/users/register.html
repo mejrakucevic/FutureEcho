@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Reddit+Mono:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'users/css/register.css' %}"
+  />
+
+  
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureEcho</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+       
+        <div class="logo">FutureEcho</div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="letters">Letters</a>
+
+          <a href="contact">Contact</a>
+        </div>
+        <div class="account">
+          <div class="register">
+            <a href="#">Register</a>
+          </div>
+          <div class="register">
+            <a href="#">Log In</a>
+          </div>
+        </div>
+      </nav>
+
+      {%  if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {%  endif %}
+
+      <div class="form-container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="input-group">
+                <legend class="form-header">Join today</legend>
+                {{form.as_p}}
+            </fieldset>
+            <div class="input-group"> 
+                <button class="submit-button" type="submit">Sign Up</button>
+            </div>
+        </form>
+    
+        <div class="footer-text">
+            <small class="footer-note">Already have an account? <a href="#">Sign In</a></small>
+        </div>
+    </div>
+    
+
+    </body>
