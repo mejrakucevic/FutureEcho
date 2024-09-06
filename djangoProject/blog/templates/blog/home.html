@@ -20,6 +20,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FutureEcho</title>
   </head>
+  <style>
+    .messages {
+        list-style: none;
+        padding: 0;
+    }
+    .message {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    .message.info {
+      background-color: #d9edf7;
+      color: #31708f;
+        border: 1px solid #bce8f1;
+    }
+    .message.success {
+      background-color: #dff0d8;
+      color: #3c763d;
+      border: 1px solid #d6e9c6;
+  }
+    .message.warning {
+        background-color: #fcf8e3;
+        color: #8a6d3b;
+        border: 1px solid #faebcc;
+    }
+    .message.error {
+        background-color: #f2dede;
+        color: #a94442;
+        border: 1px solid #ebccd1;
+    }
+</style>
+
   <body>
     <header>
       <nav>
@@ -40,13 +72,18 @@
           </div>
         </div>
       </nav>
+    
       {%  if messages %}
-        {% for message in messages %}
-          <div class="alert alert-{{ message.tags }}">
-            {{ message }}
-          </div>
+         <ul class="messages">
+           {% for message in messages %}
+              <li class="message {{ message.tags }}">
+                 {{ message }}
+              </li>
         {% endfor %}
-      {%  endif %}
+      </ul>
+
+     {%  endif %}
+ 
       <div class="container">
         <form class="form-container">
           <div class="form-group">
