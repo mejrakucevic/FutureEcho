@@ -57,16 +57,16 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class="input-group">
-                <legend class="form-header">Join today</legend>
+                <legend class="form-header">Welcome</legend>
                 {{form.as_p}}
             </fieldset>
             <div class="input-group"> 
-                <button class="submit-button" type="submit">Sign Up</button>
+                <button class="submit-button" type="submit">Sign In</button>
             </div>
         </form>
     
         <div class="footer-text">
-            <small class="footer-note">Already have an account? <a href="{% url 'login' %}">Sign In</a></small>
+            <small class="footer-note">Don't have an account? <a href="{% url 'register' %}">Sign Up</a></small>
         </div>
     </div>
     

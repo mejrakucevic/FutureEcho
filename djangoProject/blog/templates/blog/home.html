@@ -64,12 +64,21 @@
           <a href="contact">Contact</a>
         </div>
         <div class="account">
-          <div class="register">
-            <a href="register">Register</a>
-          </div>
-          <div class="register">
-            <a href="#">Log In</a>
-          </div>
+          {% if user.is_authenticated %}
+           <div class="register">
+             <form action="{% url 'logout' %}" method="post">
+             {% csrf_token %}
+             <button type="submit" class="btn btn-outline-light"><a>Logout</a></button>
+        </form></div>
+          {% else %}
+            <div class="register">
+             <a href="{% url 'register' %}">Register</a>
+            </div>
+            <div class="register">
+              <a href="{% url 'login' %}">Log In</a>
+            </div>
+            {% endif %}
+         
         </div>
       </nav>
     
