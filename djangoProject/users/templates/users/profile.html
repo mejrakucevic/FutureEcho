@@ -8,11 +8,15 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Reddit+Mono:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+
     <link
     rel="stylesheet"
     type="text/css"
     href="{% static 'users/css/register.css' %}"
   />
+
+  
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,11 +24,13 @@
   </head>
   <body>
     <header>
-      <nav>   
+      <nav>
+       
         <div class="logo">FutureEcho</div>
         <div class="menu">
           <a href="#">Home</a>
           <a href="letters">Letters</a>
+
           <a href="contact">Contact</a>
         </div>
         <div class="account">
@@ -36,11 +42,9 @@
           </div>
         </div>
       </nav>
-        <div class="footer-text">
-            <h2>You have been logged out</h2>
-            <small class="footer-note"> <a href="{% url 'login' %}">Log In Again</a></small>
-        </div>
-    </div>
+      
+
+      <h1>{{ user.username }}</h1>
     
 
     </body>
