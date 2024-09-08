@@ -96,43 +96,38 @@
 
      {%  endif %}
  
-      <div class="container">
-        <form class="form-container">
+     <div class="container">
+      <form class="form-container">
+         
           <div class="form-group">
-            <label class="form-label">Deliver in</label>
-            <div class="button-group">
-              <button type="button" class="default">6 months</button>
-              <button type="button" class="default">1 year</button>
-              <button type="button" class="default">3 years</button>
-              <button type="button" class="default">5 years</button>
-              <button type="button" class="default">10 years</button>
-            </div>
+              <label class="form-label">Deliver in</label>
+              <div class="button-group">
+                  <button type="button" class="default" name="delivery_time" value="6 months">6 months</button>
+                  <button type="button" class="default" name="delivery_time" value="1 year">1 year</button>
+                  <button type="button" class="default" name="delivery_time" value="3 years">3 years</button>
+                  <button type="button" class="default" name="delivery_time" value="5 years">5 years</button>
+                  <button type="button" class="default" name="delivery_time" value="10 years">10 years</button>
+              </div>
           </div>
-
+  
           <div class="form-group">
-            <label class="form-label">Select your audience</label>
-            <div class="button-group">
-              <button type="button" class="default">Private</button>
-              <button type="button" class="default">
-                Public, but anonymous
-              </button>
-            </div>
+              <label class="form-label">Select your audience</label>
+              <div class="button-group">
+                  <button type="button" class="default" name="audience" value="Private">Private</button>
+                  <button type="button" class="default" name="audience" value="Public, but anonymous">Public, but anonymous</button>
+              </div>
           </div>
-
+  
           <div class="form-group">
-            <label class="form-label">Make sure you get your letter</label>
-            <input
-              type="email"
-              placeholder="mejrakoza@gmail.com"
-              class="input-field"
-            />
+              <label class="form-label">Make sure you get your letter</label>
+              <input type="email" name="email" placeholder="mejrakoza@gmail.com" class="input-field" required />
           </div>
-
-          <button type="submit" class="submit-button">
-            Send to the Future
-          </button>
-        </form>
-      </div>
+  
+          <button type="submit" class="submit-button">Send to the Future</button>
+      </form>
+  </div>
+  
+  
 
       <div class="form-group">
         <textarea
@@ -148,6 +143,7 @@
     </footer>
       </div>
     
-   
+ 
+    
   </body>
 </html>

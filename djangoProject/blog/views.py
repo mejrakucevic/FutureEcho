@@ -1,6 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Post
+from django.core.mail import send_mail
+from django.conf import settings
+
 
 def home(request):
     return render(request, 'blog/home.html')
