@@ -31,7 +31,7 @@
       </div>
     </header>
 
-    {% for post in posts %}
+    {% comment %} {% for post in posts %}
     <main class="main-content">
       <div class="container">
         <section class="post-feed">
@@ -59,6 +59,18 @@
       <div class="container">
         <p>&copy; 2024 LetterFeed. All rights reserved.</p>
       </div>
+      {% endcomment %}
+      <h1>Game List</h1>
+      <ul>
+        {% for game in games %}
+        <li>{{ game.title }} - {{ game.genre }} - {{ game.developer }}</li>
+        <img
+          src="{{ game.image_link }}"
+          alt="{{ game.title }}"
+          style="max-width: 200px"
+        />
+        {% endfor %}
+      </ul>
     </footer>
   </body>
 </html>
